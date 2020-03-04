@@ -5,11 +5,9 @@ import Post from "./Post";
 import "./Posts.css";
 // import data 
 
-const PostsPage = ({ dummydata }) => {
-  // set up state for your data
+const PostsPage = ({ dummydata }) => { 
   return (
-    <div className="posts-container-wrapper">
-      {/* map through data here to return a Post and pass data as props to Post */}
+    <div className="posts-container-wrapper">      
       {dummydata.map((data, i) => {
         return <Post key={i} post={data} />
       })}

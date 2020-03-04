@@ -3,15 +3,11 @@ import React, { useState } from "react";
 import CommentSection from "../CommentSection/CommentSectionContainer";
 import LikeSection from "./LikeSection";
 import PostHeader from "./PostHeader";
-
 import "./Posts.css";
 
-// pass props in this file to
-const Post = props => {
-  // set up state for the likes
+const Post = props => { 
   const [likes, setLikes] = useState(props.post.likes);
   const [liked, setLiked] = useState(false);
-
   return (
     <div className="post-border">
       <PostHeader
